@@ -1,4 +1,5 @@
 ﻿{
+"userSecretsId": "aspnet5-WebService-20160601040823",
   "webroot": "wwwroot",
   "version": "1.0.0-*",
 
@@ -6,7 +7,11 @@
     "Microsoft.AspNet.Mvc": "6.0.0-beta5",
     "Microsoft.AspNet.Server.IIS": "1.0.0-beta5",
     "Microsoft.AspNet.Server.WebListener": "1.0.0-beta5",
-    "Microsoft.AspNet.StaticFiles": "1.0.0-beta5"
+    "Microsoft.AspNet.StaticFiles": "1.0.0-beta5",
+    "EntityFramework": "6.1.3",
+    "Newtonsoft.Json": "8.0.3",
+    "Microsoft.Framework.Configuration.Json": "1.0.0-beta5",
+    "EntityFramework.SqlServer": "7.0.0-beta5"
   },
 
   "commands": {
@@ -14,7 +19,11 @@
   },
 
   "frameworks": {
-    "dnx451": { },
+    "dnx451": {
+      "dependencies": {
+        "EntityFramework.Core": "7.0.0-beta5"
+      }
+    },
     "dnxcore50": { }
   },
 

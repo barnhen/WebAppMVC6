@@ -1,0 +1,7 @@
+﻿{
+	"Data": {
+		"DefaultConnection": {
+			"ConnectionString": "Data Source=.\\sqlexpress;Initial Catalog=DB_TESTE;Integrated Security=True;User ID=sa;Password=123456"
+		}
+	}
+}

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Mvc;
+using WebService.Models;
 
 namespace WebService.Controllers
 {
@@ -33,6 +34,12 @@ namespace WebService.Controllers
         [HttpPut("{id}")]
         public void Put(int id, [FromBody]string value)
         {
+            using (var context = new RegistrationDbContext())
+            {
+                Tag tag = new Tag();
+                tag.Descricao = value;
+                context.Tag.Add(tag);
+            }
         }
 
         // DELETE api/values/5
